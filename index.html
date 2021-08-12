@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Lucky Birthday</title>
+	</head>
+	<body>
+		<main>
+			<h1 class="title">Is your birthday lucky?</h1>
+
+			<div class="content" id="alert">
+				<div class="alert">
+					<div class="notice">
+						<strong>Privacy Notice!</strong> We are not storing your data.
+					</div>
+					<span role="img" aria-labelledby="crossIcon" id="close-notice">
+						<strong>X</strong>
+					</span>
+				</div>
+			</div>
+			<div class="content">
+				<div class="row">
+					<div>
+						<p class="label">Select your date of birth</p>
+						<input type="date" id="date-picker" name="date" />
+					</div>
+					<div>
+						<p class="label">Enter your lucky number</p>
+						<input type="number" id="lucky-number" name="date" />
+					</div>
+				</div>
+				<button id="check-btn">Check</button>
+			</div>
+			<div class="content" id="result">
+				<p id="result-text"></p>
+				<img src="./assets/lucky.svg" alt="Lucky" id="lucky-img" />
+				<img src="./assets/unlucky.svg" alt="Unlucky" id="unlucky-img" />
+			</div>
+			<div class="content" id="error">
+				<p id="error-text"></p>
+			</div>
+		</main>
+		<footer>
+			<div class="social-icons">
+				<a
+					title="GitHub"
+					href="https://github.com/adith-a-danthi"
+					target="_blank"
+				>
+					<img class="social-icon" src="assets/social-icons/github.svg" />
+				</a>
+				<a
+					title="GitLab"
+					href="https://gitlab.com/adith_danthi"
+					target="_blank"
+				>
+					<img class="social-icon" src="assets/social-icons/gitlab.svg" />
+				</a>
+				<a
+					title="LinkedIn"
+					href="https://www.linkedin.com/in/adith-a-danthi/"
+					target="_blank"
+				>
+					<img class="social-icon" src="assets/social-icons/linkedin.svg" />
+				</a>
+				<a
+					title="Twitter"
+					href="https://twitter.com/adith_danthi"
+					target="_blank"
+				>
+					<img class="social-icon" src="assets/social-icons/twitter.svg" />
+				</a>
+                <a
+					title="Website"
+					href="https://adith.dev"
+					target="_blank"
+				>
+					<img class="social-icon" src="assets/social-icons/web.svg" />
+				</a>
+			</div>
+		</footer>
+		<script src="./app.js"></script>
+	</body>
+</html>
